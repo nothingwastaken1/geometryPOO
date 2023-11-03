@@ -156,17 +156,3 @@ class Figure:
             value += f"posSeg : {seg + 1}, {str(self.listeSeg[seg])}\n" #Ajoutons à notre resultat la position du segment en termes de liste de la figure et
                                                                          #ajoutons donc les donnes du seg : str(seg)
         return value
-
-p1 = Point(0, 0)
-p2 = Point(1, 3)
-p3 = Point(2.5, 2)
-p4 = Point(3, 0)
-
-seg1 = Segment(p1, p2)
-seg2 = Segment(p2, p3)
-seg3 = Segment(p3, p4)
-seg4 = Segment(p4, p1)
-
-fig = Figure([seg1, seg2, seg3, seg4]) #seg4
-print(fig.Aire())
-
